@@ -31,7 +31,7 @@ footer {
 
 .button {
     background-color: #0099ff; 
-    border: solid black 3px;
+    border: solid black 2px;
     border-radius: 25px;
     color: white;
     padding: 15px 32px;
@@ -42,3 +42,15 @@ footer {
     margin-top: 20px;
   }
 
+.ans-btn {
+    display: grid;
+
+}
+
+.hide {
+    display: none;
+}
+
+#questionDiv {
+    font-size: 22px;
+}

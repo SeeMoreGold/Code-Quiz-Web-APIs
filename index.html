@@ -31,27 +31,40 @@
             </li>
           </ul>
         </div>
+        <div class="timer" id="seconds">Timer: 120</div>
+          
+          
+        </div>
   </nav>
   
   <!-- This is the main content -->
   <main class="container py-3">
         <div class="row">
             <div class="col-md-12">
-                <h1>Coding Quiz Challenge</h1>
+                <h1 id="startHeading">Coding Quiz Challenge</h1>
+                <div class="hide" id="questionDiv"></div>
             <hr class="border"/>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-12 py-3">
+                <!-- These will be hidden at first until the user clicks start -->
+                
+                <div class="hide" id="answerDiv">
+                  <button id="answerBtn1" class="button ans-btn">Answer1</button>
+                  <button id="answerBtn2" class="button ans-btn">Answer2</button>
+                  <button id="answerBtn3" class="button ans-btn">Answer3</button>
+                  <button id="answerBtn4" class="button ans-btn">Answer4</button>
+                </div>
                  
-                <p>Answer the following code-related questions within the 
+                <p id="intro">Answer the following code-related questions within the 
                     time limit. Incorrect answers will penalize your score 
                     and reduce the time by ten seconds.
                 </p>
                 <!-- <button class="button" id="startQuiz">Start Quiz</button> -->
                 
-                <button id="startQuiz" class="button">Start Quiz</button>
+                <button id="startBtn" class="button">Start Quiz</button>
                 
             </div>
         </div>
@@ -65,5 +78,6 @@
     <div class="footer-copyright text-center py-3">© 2020 Candice Moreau
     </div>
   </footer>
+  <script src="assets/script.js"></script>
 </body>
 </html>
